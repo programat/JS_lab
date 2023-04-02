@@ -1,4 +1,5 @@
-const currentDate = document.querySelector(".current-date");
+const currentMonth = document.querySelector("#current-month");
+const currentYear = document.querySelector("#current-year");
 daysTag = document.querySelector(".days");
 prevNextIcon = document.querySelectorAll(".icons span")
 
@@ -31,7 +32,8 @@ const renderCalendar = () => {
 
 
 
-    currentDate.innerText = `${months[currMonth]} ${currYear}`;
+    currentMonth.innerText = `${months[currMonth]}`;
+    currentYear.innerText =`${currYear}`;
     daysTag.innerHTML = liTag;
 }
 

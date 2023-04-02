@@ -36,9 +36,15 @@ body{
     justify-content: space-between;
 }
 
+header .cal-date{
+    display: flex;
+    flex-direction: row;
+}
+
 header .current-date{
     font-size: 1.45rem;
     font-weight: 500;
+    margin-right: 7px;
 }
 
 header .icons span{
