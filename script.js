@@ -30,11 +30,33 @@ const renderCalendar = () => {
         liTag += `<li class="inactive">${i - lastDayofMonth+1}</li>`;
     }
 
+    let li_list = liTag.split('<li');
+    let new_li_list = [];
+    for (let i = 0; i < li_list.length; i++) {
+        if (i === 0) {
+            new_li_list.push(li_list[i]);
+            continue;
+        }
+        if ((i-1) % 7 === 0 || i % 7 === 0) {
+            if (li_list[i].includes('class="inactive"')){
+                new_li_list.push('<li class="days-weekend inactive"' + li_list[i].replace("inactive", ""));
+            }
+            else{
+                new_li_list.push('<li class="days-weekend"' + li_list[i]);
+            }
+        } else {
+            new_li_list.push('<li' + li_list[i]);
+        }
+    }
 
+    let new_liTag = new_li_list.join('');
+    console.log(new_liTag);
+
+    console.log(liTag)
 
     currentMonth.innerText = `${months[currMonth]}`;
     currentYear.innerText =`${currYear}`;
-    daysTag.innerHTML = liTag;
+    daysTag.innerHTML = new_liTag;
 }
 
 renderCalendar();
@@ -47,7 +69,7 @@ prevNextIcon.forEach(icon => {
             date = new Date(currYear, currMonth);
             currYear=date.getFullYear();
             currMonth = date.getMonth();
-            date=new date;
+            date=new Date();
         }
         renderCalendar();
     })

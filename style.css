@@ -27,6 +27,9 @@ body{
     width: 450px;
     background: #ffff;
     border-radius: 10px;
+
+    box-shadow: 10px 10px 30px #b3b3b3,
+    -10px -10px 30px #ffffff;
 }
 
 .calendar header{
@@ -84,6 +87,18 @@ header .icons span:last-child{
 
 .cal-body .weeks li{
     font-weight: 500;
+}
+
+.weekend{
+    color: rgb(235, 85, 89);
+}
+
+.days-weekend{
+    color: rgb(238, 85, 89);
+}
+
+.days li.days-weekend.inactive{
+    color: rgb(220, 174, 174);
 }
 
 .cal-body .days li{
