@@ -3,39 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>JS-HW</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-calendar.css">
+
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
     <script src="script.js" defer></script>
+    <script src="script-calendar.js" defer></script>
+    <script src="script-time.js" defer></script>
 </head>
 <body>
-    <div class="calendar-section">
-        <div class="calendar">
-            <header>
-                <div class="cal-date">
-                    <span id="current-month" class="current-date">March</span>
-                    <p id="current-year" class="current-date">2023</p>
+
+    <div class="tasks">
+        <h1 id="tasks-h1"> Задания по JS - Вариант 5</h1>
+        <div class="tasks-item">
+            <div class="tasks-header">
+                Задание 1 - Дата/время
+            </div>
+            <div class="tasks-body">
+                <div class="date-time" style="display: flex; flex-direction: column; align-items: center;  justify-content: center;">
+                    <h1 class="t1-date-h1" style="color: black; font-size: 32px; font-weight: 500"></h1>
+                    <h1 class="t1-time-h1" style="color: black; font-size: 32px; font-weight: 500"></h1>
                 </div>
-                <div class="icons">
-                    <span id="prev" class="material-symbols-rounded">chevron_left</span>
-                    <span id="next" class="material-symbols-rounded">chevron_right</span>
-                </div>
-            </header>
-            <div class="cal-body">
-                <ul class="weeks">
-                    <li class="weekend">Sun</li>
-                    <li>Mon</li>
-                    <li>Tue</li>
-                    <li>Wed</li>
-                    <li>Thu</li>
-                    <li>Fri</li>
-                    <li class="weekend">Sat</li>
-                </ul>
-                <ul class="days"></ul>
             </div>
         </div>
-        <div class="month-list">
 
+        <div class="tasks-item">
+            <div class="tasks-header">
+                Задание 2 - Календарь
+            </div>
+            <div class="tasks-body">
+                <div class="calendar-section">
+                    <div class="calendar">
+                        <header>
+                            <div class="cal-date">
+                                <span id="current-month" class="current-date">March</span>
+                                <p id="current-year" class="current-date">2023</p>
+                            </div>
+                            <div class="icons">
+                                <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                                <span id="next" class="material-symbols-rounded">chevron_right</span>
+                            </div>
+                        </header>
+                        <div class="cal-body">
+                            <ul class="weeks">
+                                <li class="weekend">Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li class="weekend">Sat</li>
+                            </ul>
+                            <ul class="days"></ul>
+                        </div>
+                    </div>
+                    <div class="month-list">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
