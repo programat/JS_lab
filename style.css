@@ -54,3 +54,10 @@ body{
 .tasks-item.active .tasks-body {
     display: block;
 }
+
+.task-footer{
+    width: 600px;
+    height: 12px;
+    background: #f2f2f2;
+    border-radius: 0 0 10px 10px;
+}

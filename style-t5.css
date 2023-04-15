@@ -1,0 +1,20 @@
+.tasks-body {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.t5-table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.t5-table table td,
+.t5-table table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.t5-table table th {
+    background-color: #4CAF50;
+    color: white;
+}
