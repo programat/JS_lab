@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>JS-HW</title>
+    <link rel="shortcut icon" href="js-icon.png">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-calendar.css">
     <link rel="stylesheet" href="style-t3.css">
     <link rel="stylesheet" href="style-t4.css">
+    <link rel="stylesheet" href="style-t5.css">
+    <link rel="stylesheet" href="style-t6.css">
+    <link rel="stylesheet" href="style-t7.css">
+    <link rel="stylesheet" href="style-t8.css">
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
@@ -17,6 +22,10 @@
     <script src="script-time.js" defer></script>
     <script src="script-t3.js" defer></script>
     <script src="script-t4.js" defer></script>
+    <script src="script-t5.js" defer></script>
+    <script src="script-t6.js" defer></script>
+    <script src="script-t7.js" defer></script>
+    <script src="script-t8.js" defer></script>
 </head>
 <body>
 
@@ -125,7 +134,9 @@
                 Задание 5 - Скрипт для создания элемента согласно варианту
             </div>
             <div class="tasks-body">
-                <button id="createTableBtn">Создать таблицу</button>
+                <div class="button-container">
+                    <button id="createTableBtn">Создать таблицу</button>
+                </div>
                 <div class="t5-table"></div>
             </div>
         </div>
@@ -134,14 +145,29 @@
                 Задание 6 - Организовать обработку события
             </div>
             <div class="tasks-body">
-
+                <div id="t6-text-block">
+                    <p>VOLCANO, our fourth studio album will be released on August 11th. Volcano is available to pre-order on our store including an exclusive orange and white Vinyl LP, CD and Cassette. The first 1000 pre-orders from the UK store will be signed, so pre-order fast. Fans in Australia can order the exclusive vinyl from our new Australian store with @merchjungle. </p>
+                </div>
             </div>
         </div>
         <div class="tasks-item">
             <div class="tasks-header">
                 Задание 7 - Создайте меню, которое раскрывается/сворачивается при клике
             </div>
-            <div class="tasks-body">
+            <div class="tasks-body" id="t7">
+                <div class="menu">
+                    <div class="menu-title">Меню сладостей</div>
+                    <ul class="menu-list">
+                        <li>Шоколад</li>
+                        <li>Пирожное</li>
+                        <li>Мороженое</li>
+                        <li>Конфеты</li>
+                        <li>Пончики</li>
+                        <li>Мармелад</li>
+                        <li>Вафли</li>
+                    </ul>
+                    <div class="menu-status">Сладости закончились</div>
+                </div>
 
             </div>
         </div>
@@ -151,7 +177,10 @@
                 плавно проявляться на экране
             </div>
             <div class="tasks-body">
-
+                <div class="t8-container">
+                    <img src='Jungle-CandleFlame.jpg' alt="image" class="t8-image">
+                    <div class="t8-text">Текст, расположенный за картинкой</div>
+                </div>
             </div>
         </div>
         <div class="tasks-item">

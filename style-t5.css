@@ -1,9 +1,6 @@
-.tasks-body {
-    background-color: #f2f2f2;
-    padding: 10px;
-}
 
 .t5-table table {
+    margin-top: 10px;
     border-collapse: collapse;
     width: 100%;
 }
@@ -18,3 +15,41 @@
     background-color: #4CAF50;
     color: white;
 }
+
+#createTableBtn {
+    position: relative;
+    display: inline-block;
+    padding: 9px 28px;
+    background-color: #c5c5c5;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 8px 8px 16px #a8a8a8,
+    -8px -8px 16px #e0e0e0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #404040;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+
+#createTableBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 10px #a8a8a8,
+    -5px -5px 10px #e0e0e0;
+}
+
+#createTableBtn:active {
+    transform: translateY(0);
+    box-shadow: inset 3px 3px 6px #a8a8a8,
+    inset -3px -3px 6px #e0e0e0;
+}
+
+#createTableBtn.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+
+

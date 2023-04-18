@@ -1,0 +1,33 @@
+#t7{
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.menu-title {
+    font-weight: bold;
+    text-align: center;
+}
+.menu-list {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+
+.menu-list li {
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.menu-status {
+    margin-top: 10px;
+    display: none;
+}
