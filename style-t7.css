@@ -10,6 +10,7 @@
 }
 
 .menu-title {
+    cursor: pointer;
     font-weight: bold;
     text-align: center;
 }
@@ -28,6 +29,7 @@
 }
 
 .menu-status {
+    color: darkred;
     margin-top: 10px;
     display: none;
 }
