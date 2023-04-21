@@ -146,6 +146,6 @@ form .buttons button , .backBtn{
 .input-field textarea:focus {
     border-color: #1E90FF;
     outline: none;
-    border-width: 2px;
+    /*border-width: 2px;*/
 }
 
