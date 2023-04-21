@@ -5,6 +5,11 @@
     <title>JS-HW</title>
     <link rel="shortcut icon" href="js-icon.png">
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-calendar.css">
     <link rel="stylesheet" href="style-t3.css">
@@ -31,207 +36,272 @@
 </head>
 <body>
 
-    <div class="tasks">
-        <h1 id="tasks-h1"> Задания по JS - Вариант 5</h1>
-        <div class="tasks-item">
-            <div class="tasks-header">
-                Задание 1 - Дата/время
-            </div>
-            <div class="tasks-body">
-                <div class="date-time" style="display: flex; flex-direction: column; align-items: center;  justify-content: center;">
-                    <h1 class="t1-date-h1" style="color: black; font-size: 32px; font-weight: 500"></h1>
-                    <h1 class="t1-time-h1" style="color: black; font-size: 32px; font-weight: 500"></h1>
-                </div>
+<div class="tasks">
+    <h1 id="tasks-h1"> Задания по JS - Вариант 5</h1>
+    <div class="tasks-item">
+        <div class="tasks-header">
+            Задание 1 - Дата/время
+        </div>
+        <div class="tasks-body">
+            <div class="date-time"
+                 style="display: flex; flex-direction: column; align-items: center;  justify-content: center;">
+                <h1 class="t1-date-h1" style="color: black; font-size: 32px; font-weight: 500"></h1>
+                <h1 class="t1-time-h1" style="color: black; font-size: 32px; font-weight: 500"></h1>
             </div>
         </div>
-        <div class="tasks-item">
-            <div class="tasks-header">
-                Задание 2 - Календарь
-            </div>
-            <div class="tasks-body">
-                <div class="calendar-section">
-                    <div class="calendar">
-                        <header>
-                            <div class="cal-date">
-                                <span id="current-month" class="current-date">March</span>
-                                <p id="current-year" class="current-date">2023</p>
-                            </div>
-                            <div class="icons">
-                                <span id="prev" class="material-symbols-rounded">chevron_left</span>
-                                <span id="next" class="material-symbols-rounded">chevron_right</span>
-                            </div>
-                        </header>
-                        <div class="cal-body">
-                            <ul class="weeks">
-                                <li class="weekend">Sun</li>
-                                <li>Mon</li>
-                                <li>Tue</li>
-                                <li>Wed</li>
-                                <li>Thu</li>
-                                <li>Fri</li>
-                                <li class="weekend">Sat</li>
-                            </ul>
-                            <ul class="days"></ul>
-                        </div>
-                    </div>
-                    <div class="month-list">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tasks-item">
-            <div class="tasks-header">
-                Задание 3 - Нахождение элементов в DOM-дереве
-            </div>
-            <div class="tasks-body">
-                <form class="t3-form">
-                    <label for="name">Имя:</label>
-                    <input type="text" id="name" name="name">
-                    <br>
-                    <button type="submit">Отправить</button>
-                </form>
-                <p class="t3-p" style="margin-top: 20px; font-size: 18px; font-weight: 400;"></p>
-            </div>
-        </div>
-        <div class="tasks-item">
-            <div class="tasks-header">Задание 4 - Изменение объекта</div>
-            <div class="tasks-body">
-                <div class="button-container">
-                    <button id="neuromorphic-button">
-                        <span class="button-label">Run</span>
-                    </button>
-                </div>
-
-                <div class="t4-boxes">
-                    <div class="t4-box-layout">
-                        <div class="t4-box">
-                            <div class="t4-box-image-layout"><img id="t4-box-image-1" class="t4-box-image" scr=""></div>
-                            <p class="t4-box-text">Block 1</p>
-                        </div>
-                    </div>
-                    <div class="t4-box-layout">
-                        <div class="t4-box">
-                            <div class="t4-box-image-layout"><img id="t4-box-image-2" class="t4-box-image" scr=""></div>
-                            <p class="t4-box-text">Block 2</p>
-                        </div>
-                    </div>
-                    <div class="t4-box-layout">
-                        <div class="t4-box">
-                            <div class="t4-box-image-layout"><img id="t4-box-image-3" class="t4-box-image" scr=""></div>
-                            <p class="t4-box-text">Block 3</p>
-                        </div>
-                    </div>
-                    <div class="t4-box-layout">
-                        <div class="t4-box">
-                            <div class="t4-box-image-layout"><img id="t4-box-image-4" class="t4-box-image" scr=""></div>
-                            <p class="t4-box-text">Block 4</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tasks-item">
-            <div class="tasks-header">
-                Задание 5 - Скрипт для создания элемента согласно варианту
-            </div>
-            <div class="tasks-body">
-                <div class="button-container">
-                    <button id="createTableBtn">Создать таблицу</button>
-                </div>
-                <div class="t5-table"></div>
-            </div>
-        </div>
-        <div class="tasks-item">
-            <div class="tasks-header">
-                Задание 6 - Организовать обработку события
-            </div>
-            <div class="tasks-body">
-                <div id="t6-text-block">
-                    <p>VOLCANO, our fourth studio album will be released on August 11th. Volcano is available to pre-order on our store including an exclusive orange and white Vinyl LP, CD and Cassette. The first 1000 pre-orders from the UK store will be signed, so pre-order fast. Fans in Australia can order the exclusive vinyl from our new Australian store with @merchjungle. </p>
-                </div>
-            </div>
-        </div>
-        <div class="tasks-item">
-            <div class="tasks-header">
-                Задание 7 - Создайте меню, которое раскрывается/сворачивается при клике
-            </div>
-            <div class="tasks-body" id="t7">
-                <div class="menu">
-                    <div class="menu-title">Меню сладостей</div>
-                    <ul class="menu-list">
-                        <li>Шоколад</li>
-                        <li>Пирожное</li>
-                        <li>Мороженое</li>
-                        <li>Конфеты</li>
-                        <li>Пончики</li>
-                        <li>Мармелад</li>
-                        <li>Вафли</li>
-                    </ul>
-                    <div class="menu-status">Сладости закончились</div>
-                </div>
-
-            </div>
-        </div>
-        <div class="tasks-item">
-            <div class="tasks-header">
-                Задание 8 - Используя функцию setTimeout и статический фильтр alpha, создайте картинку, которая будет
-                плавно проявляться на экране
-            </div>
-            <div class="tasks-body">
-                <div class="t8-container">
-                    <img src='Jungle-CandleFlame.jpg' alt="image" class="t8-image">
-                    <div class="t8-text">Jungle4eva!!!</div>
-                </div>
-            </div>
-        </div>
-        <div class="tasks-item">
-            <div class="tasks-header">
-                Задание 9 - Регулярные выражения
-            </div>
-            <div class="tasks-body">
-                <form class="main-form">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                    <br>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                    <br>
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                    <br>
-                    <label for="full-name">Full Name:</label>
-                    <input type="text" id="full-name" name="full-name" required>
-                    <br>
-                    <label for="faculty">Faculty:</label>
-                    <input type="text" id="faculty" name="faculty" required>
-                    <br>
-                    <label for="department">Department:</label>
-                    <input type="text" id="department" name="department" required>
-                    <br>
-                    <label for="about">About Yourself:</label>
-                    <textarea id="about" name="about"></textarea>
-                    <br>
-                    <label for="photo">Photo:</label>
-                    <input type="file" id="photo" name="photo" accept="image/*" required>
-                    <br>
-                    <button type="submit">Register</button>
-                </form>
-                <div id="avatar" alt="Avatar" style="max-height: 250px">
-            </div>
-        </div>
-        <div class="tasks-item">
-            <div class="tasks-header">
-                Задание 10 - Напишите обработчик формы, созданной ранее
-            </div>
-            <div class="tasks-body">
-
-            </div>
-        </div>
-        <div class="task-footer"></div>
     </div>
+    <div class="tasks-item">
+        <div class="tasks-header">
+            Задание 2 - Календарь
+        </div>
+        <div class="tasks-body">
+            <div class="calendar-section">
+                <div class="calendar">
+                    <header>
+                        <div class="cal-date">
+                            <span id="current-month" class="current-date">March</span>
+                            <p id="current-year" class="current-date">2023</p>
+                        </div>
+                        <div class="icons">
+                            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                            <span id="next" class="material-symbols-rounded">chevron_right</span>
+                        </div>
+                    </header>
+                    <div class="cal-body">
+                        <ul class="weeks">
+                            <li class="weekend">Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li class="weekend">Sat</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+                </div>
+                <div class="month-list">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tasks-item">
+        <div class="tasks-header">
+            Задание 3 - Нахождение элементов в DOM-дереве
+        </div>
+        <div class="tasks-body">
+            <form class="t3-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <button type="submit">Отправить</button>
+            </form>
+            <p class="t3-p" style="margin-top: 20px; font-size: 18px; font-weight: 400;"></p>
+        </div>
+    </div>
+    <div class="tasks-item">
+        <div class="tasks-header">Задание 4 - Изменение объекта</div>
+        <div class="tasks-body">
+            <div class="button-container">
+                <button id="neuromorphic-button">
+                    <span class="button-label">Run</span>
+                </button>
+            </div>
+
+            <div class="t4-boxes">
+                <div class="t4-box-layout">
+                    <div class="t4-box">
+                        <div class="t4-box-image-layout"><img id="t4-box-image-1" class="t4-box-image" scr=""></div>
+                        <p class="t4-box-text">Block 1</p>
+                    </div>
+                </div>
+                <div class="t4-box-layout">
+                    <div class="t4-box">
+                        <div class="t4-box-image-layout"><img id="t4-box-image-2" class="t4-box-image" scr=""></div>
+                        <p class="t4-box-text">Block 2</p>
+                    </div>
+                </div>
+                <div class="t4-box-layout">
+                    <div class="t4-box">
+                        <div class="t4-box-image-layout"><img id="t4-box-image-3" class="t4-box-image" scr=""></div>
+                        <p class="t4-box-text">Block 3</p>
+                    </div>
+                </div>
+                <div class="t4-box-layout">
+                    <div class="t4-box">
+                        <div class="t4-box-image-layout"><img id="t4-box-image-4" class="t4-box-image" scr=""></div>
+                        <p class="t4-box-text">Block 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tasks-item">
+        <div class="tasks-header">
+            Задание 5 - Скрипт для создания элемента согласно варианту
+        </div>
+        <div class="tasks-body">
+            <div class="button-container">
+                <button id="createTableBtn">Создать таблицу</button>
+            </div>
+            <div class="t5-table"></div>
+        </div>
+    </div>
+    <div class="tasks-item">
+        <div class="tasks-header">
+            Задание 6 - Организовать обработку события
+        </div>
+        <div class="tasks-body">
+            <div id="t6-text-block">
+                <p>VOLCANO, our fourth studio album will be released on August 11th. Volcano is available to pre-order
+                    on our store including an exclusive orange and white Vinyl LP, CD and Cassette. The first 1000
+                    pre-orders from the UK store will be signed, so pre-order fast. Fans in Australia can order the
+                    exclusive vinyl from our new Australian store with @merchjungle. </p>
+            </div>
+        </div>
+    </div>
+    <div class="tasks-item">
+        <div class="tasks-header">
+            Задание 7 - Создайте меню, которое раскрывается/сворачивается при клике
+        </div>
+        <div class="tasks-body" id="t7">
+            <div class="menu">
+                <div class="menu-title">Меню сладостей</div>
+                <ul class="menu-list">
+                    <li>Шоколад</li>
+                    <li>Пирожное</li>
+                    <li>Мороженое</li>
+                    <li>Конфеты</li>
+                    <li>Пончики</li>
+                    <li>Мармелад</li>
+                    <li>Вафли</li>
+                </ul>
+                <div class="menu-status">Сладости закончились</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="tasks-item">
+        <div class="tasks-header">
+            Задание 8 - Используя функцию setTimeout и статический фильтр alpha, создайте картинку, которая будет
+            плавно проявляться на экране
+        </div>
+        <div class="tasks-body">
+            <div class="t8-container">
+                <img src='Jungle-CandleFlame.jpg' alt="image" class="t8-image">
+                <div class="t8-text">Jungle4eva!!!</div>
+            </div>
+        </div>
+    </div>
+    <div class="tasks-item">
+        <div class="tasks-header">
+            Задание 9-10 - Регулярные выражения 👷
+        </div>
+        <div class="tasks-body" id="task-body-t9">
+            <div class="body-t9-layout">
+                <div class="body-t9">
+                    <header>Registration</header>
+                    <form action="#">
+                        <div class="form-first">
+                            <div class="details id">
+                                <span class="title">Personal Details</span>
+
+                                <div class="fields">
+
+                                    <div class="input-field">
+                                        <label>Full Name</label>
+                                        <input id="#full-name" type="text" placeholder="Enter your name" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Login</label>
+                                        <input id="#username" type="text" placeholder="Enter your login" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Password</label>
+                                        <input id="#password" type="password" placeholder="Enter your password" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Confirm password</label>
+                                        <input id="#confirm-password" type="password" placeholder="Confirm your password" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label >E-mail</label>
+                                        <input id="email" type="email" placeholder="Enter e-mail" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Gender</label>
+                                        <select required>
+                                            <option disabled selected>Select gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Prefer not to say</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="nextBtn">
+                                    <span class="btnText">Next</span>
+                                    <i class="uil uil-navigator"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-second">
+                            <div class="details personal">
+                                <span class="title">Identity Details</span>
+
+                                <div class="fields">
+
+                                    <div class="input-field">
+                                        <label>Mobile Number</label>
+                                        <input id="#phone" type="number" placeholder="Enter mobile number" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Date of Birth</label>
+                                        <input type="date" placeholder="Enter birth date" required>
+                                    </div>
+
+
+                                    <div class="input-field">
+                                        <label for="faculty">Faculty</label>
+                                        <input id="#faculty" type="text" id="faculty" placeholder="faculty">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label for="department">Department</label>
+                                        <input id="#department" type="text" id="department" name="department">
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="about">About</label>
+                                        <textarea id="about" name="about"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="buttons">
+                                    <div class="backBtn">
+                                        <i class="uil uil-navigator"></i>
+                                        <span class="btnText">Back</span>
+                                    </div>
+
+                                    <button class="sumbit">
+                                        <span class="btnText">Submit</span>
+                                        <i class="uil uil-navigator"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="task-footer"></div>
+</div>
 </body>
 </html>
