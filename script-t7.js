@@ -4,10 +4,16 @@ const menuItems = menuList.children;
 
 const menuTitle = document.querySelector('.menu-title');
 menuTitle.addEventListener('click', function() {
-    if (menuList.style.display === 'none'){menuList.style.display = 'block'}
-    else menuList.style.display = 'none';
+    toggleMenu();
 });
 
+function toggleMenu() {
+    if (menuList.style.display === 'none') {
+        menuList.style.display = 'block';
+    } else {
+        menuList.style.display = 'none';
+    }
+}
 
 for (let i = 0; i < menuItems.length; i++) {
     menuItems[i].addEventListener('click', function() {
